@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Food Recipe Sharing | Group 4</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>eatwell <a href="login"><h6 class="loginbtn">Login</h6></a></h1>
+        <div class="search">
+            <input type="text" id="searchInput" placeholder="Enter an ingredient...">
+            <button id="searchButton">Search</button>
+        </div>
+    </header>
+
+    <!-- Recipe Section -->
+    <section id="recipeSection">
+        <h2>My Recipes</h2>
+        <button id="addRecipeBtn">Add Recipe</button>
+        <div id="recipeList" class="recipe-list">
+            <!-- Your recipes will be displayed here -->
+        </div>
+    </section>
+
+    <div id="mealList" class="meal-list"></div>
+    <div class="modal-container">
+        <button id="recipeCloseBtn" class="close-button">&times;</button>
+        <div class="meal-details-content">
+            <!-- Content from js will be inserted here -->
+        </div>
+    </div>
+
+    <!-- Add the modal for adding recipes -->
+    <div id="recipeModal" class="modal-container">
+        <button id="closeRecipeModalBtn" class="close-button">&times;</button>
+        <div class="recipe-form-content">
+            <h3>Add Recipe</h3>
+            <!-- Your form for adding recipes will go here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
